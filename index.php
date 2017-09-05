@@ -21,10 +21,19 @@
 				  </thead>
 				  <tbody>
 				  <?php 
-				  for ($i= -30; $i <= 30 ; $i = $i +3) { 
-				  	echo '<tr><td>' . $i . '</td></tr>';
+				  for ($i= -30; $i <= 35 ; $i = $i +3) { 
+				  	if ( $i <= -20) {
+				  		echo '<tr><td>' . $i . '</td><td>' . "Labai šalta" . '</td> </tr>';
+				  	} elseif ($i <= 5 && -20 < $i) {
+				  		echo '<tr><td>' . $i . '</td><td>' . "Šalta" . '</td> </tr>';
+				  	} elseif ($i <= 20 && 5 < $i) {
+				  		echo '<tr><td>' . $i . '</td><td>' . "Šilta" . '</td> </tr>';
+				  	} elseif ($i <= 25 && 20 < $i) {
+				  		echo '<tr><td>' . $i . '</td><td>' . "Karšta" . '</td> </tr>';
+				  	} elseif ($i > 25) {
+				  		echo '<tr><td>' . $i . '</td><td>' . "Labai karšta" . '</td> </tr>';
+				  	}
 				  }
-
 				  ?>
 				  </tbody>
 			</table>
