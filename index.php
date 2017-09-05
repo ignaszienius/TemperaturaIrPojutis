@@ -20,18 +20,12 @@
 				    </tr>
 				  </thead>
 				  <tbody>
-				    <tr>
-				      <td>Mark</td>
-				      <td>Otto</td>
-				    </tr>
-				    <tr>
-				      <td>Jacob</td>
-				      <td>Thornton</td>
-				    </tr>
-				    <tr>
-				      <td>Larry</td>
-				      <td>the Bird</td>
-				    </tr>
+				  <?php 
+				  for ($i= -30; $i <= 30 ; $i = $i +3) { 
+				  	echo '<tr><td>' . $i . '</td></tr>';
+				  }
+
+				  ?>
 				  </tbody>
 			</table>
 		</div>	
