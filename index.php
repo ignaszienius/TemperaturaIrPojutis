@@ -39,6 +39,7 @@
 			</table>
 		</div>	
 		<div class="col-6">
+		<h1>Sąlygos</h1>
 		<ul class="list-group">
 		  <li class="list-group-item">Temperatūros pateikiamos kas 3C intervale -30 ... +35</li>
 		  <li class="list-group-item">Jeigu temperatūra mažesnė arba lygi -20 - labai šalta</li>
